@@ -31,12 +31,24 @@ export default function Nav() {
           className="flex items-center gap-2 font-semibold text-[var(--text)] hover:text-[var(--accent)] transition-colors"
           aria-label="CountPro home"
         >
-          <span
-            className="tabular-nums text-[var(--accent)] text-lg font-bold tracking-tight"
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
             aria-hidden="true"
+            style={{ flexShrink: 0 }}
           >
-            +
-          </span>
+            <rect x="12" y="15" width="76" height="85" rx="16" ry="16" fill="#F59E0B" stroke="#0E0E12" strokeWidth="4" strokeLinejoin="round"/>
+            <circle cx="50" cy="18" r="10" fill="#F59E0B" stroke="#0E0E12" strokeWidth="3"/>
+            <circle cx="50" cy="18" r="6" fill="#F59E0B" stroke="#0E0E12" strokeWidth="2"/>
+            <rect x="18" y="35" width="48" height="32" rx="4" ry="4" fill="#1A1A1E" stroke="#0E0E12" strokeWidth="3" strokeLinejoin="round"/>
+            <text x="42" y="62" fontSize="20" fontWeight="bold" fill="#F59E0B" textAnchor="middle" fontFamily="monospace" letterSpacing="2">237</text>
+            <rect x="72" y="42" width="10" height="18" rx="1.5" ry="1.5" fill="#F59E0B" stroke="#0E0E12" strokeWidth="2"/>
+            <rect x="73" y="44" width="8" height="14" fill="#0E0E12"/>
+            <rect x="73" y="44" width="8" height="10" fill="#F59E0B"/>
+          </svg>
           <span>CountPro</span>
         </Link>
 

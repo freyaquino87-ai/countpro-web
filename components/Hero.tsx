@@ -39,7 +39,7 @@ export default function Hero() {
 
             <h1
               className="mb-5 text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
-              style={{ color: "var(--text)" }}
+              style={{ color: "var(--text)", textWrap: "pretty" } as React.CSSProperties}
             >
               Count anything.{" "}
               <span style={{ color: "var(--accent)" }}>
@@ -83,7 +83,7 @@ export default function Hero() {
 
               <a
                 href="#features"
-                className="text-sm transition-colors"
+                className="text-sm transition-colors hover:text-[var(--text)]"
                 style={{ color: "var(--muted)", minHeight: "44px", display: "flex", alignItems: "center" }}
               >
                 See how it works →

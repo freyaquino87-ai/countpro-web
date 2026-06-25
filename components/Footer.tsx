@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  const year = 2026;
 
   return (
     <footer
@@ -23,7 +23,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/privacy"
-                  className="transition-colors"
+                  className="hover:text-[var(--text)] transition-colors"
                   style={{ color: "var(--muted)", minHeight: "44px", display: "flex", alignItems: "center" }}
                 >
                   Privacy policy
@@ -32,7 +32,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms"
-                  className="transition-colors"
+                  className="hover:text-[var(--text)] transition-colors"
                   style={{ color: "var(--muted)", minHeight: "44px", display: "flex", alignItems: "center" }}
                 >
                   Terms of use
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:support@countpro.app"
-                  className="transition-colors"
+                  className="hover:text-[var(--text)] transition-colors"
                   style={{ color: "var(--muted)", minHeight: "44px", display: "flex", alignItems: "center" }}
                 >
                   Contact

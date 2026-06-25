@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <SchemaMarkup />
       <Nav />
-      <main>
+      <main id="main-content">
         <Hero />
         <Pitch />
         <Features />

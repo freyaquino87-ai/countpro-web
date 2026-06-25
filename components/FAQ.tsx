@@ -74,6 +74,7 @@ export default function FAQ() {
                   <button
                     onClick={() => setOpen(isOpen ? null : i)}
                     aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${i}`}
                     className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
                     style={{
                       color: "var(--text)",
@@ -98,6 +99,7 @@ export default function FAQ() {
                 </dt>
                 {isOpen && (
                   <dd
+                    id={`faq-answer-${i}`}
                     className="px-5 pb-5 text-sm leading-relaxed"
                     style={{ color: "var(--muted)" }}
                   >

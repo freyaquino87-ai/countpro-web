@@ -14,11 +14,12 @@ export default function Nav() {
 
   return (
     <header
-      className="fixed top-0 inset-x-0 z-50 transition-all duration-200"
+      className="fixed top-0 inset-x-0 z-50"
       style={{
         backgroundColor: scrolled ? "rgba(14,14,18,0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled ? "1px solid var(--hairline)" : "none",
+        transition: "background-color 0.2s, backdrop-filter 0.2s, border-color 0.2s",
       }}
     >
       <nav
